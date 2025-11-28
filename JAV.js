@@ -45,7 +45,7 @@ function playRound() {
     }
   } else if (humanSelection === "paper") {
     if (computerSelection === "scissors") {
-      console.log(computerwins);
+      console.log(computerwins); ~
       return 2;
     } else if (computerSelection === "paper") {
       console.log(TIEREDO);

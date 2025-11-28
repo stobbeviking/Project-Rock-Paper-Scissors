@@ -1,0 +1,125 @@
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #00ff00;
+  font-family: "consolas", sans-serif;
+
+}
+
+button {
+  font-size: 38px;
+  padding: 1em 2em;
+  background-color: #333333;
+  border: none;
+  color: white;
+  border-radius: 1000px;
+  font-family: "consolas", sans-serif;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button::after {
+  content: '';
+  position: absolute;
+  height: 110%;
+  width: 105%;
+  border-radius: 1000px;
+  background-image: linear-gradient(to bottom right, white, #00ff0077);
+  z-index: -1;
+}
+
+button:hover {
+  z-index: 0;
+  box-shadow: 40px 0 50px #00ff00, -40px 0 50px #00ff007c;
+}
+
+#box1 {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  justify-content: center;
+  align-content: center;
+}
+
+#gameName {
+  display: flex;
+  justify-content: center;
+  height: 250px;
+}
+
+#descrip {
+  color: #00ff00;
+  font-size: 34px;
+  display: flex;
+  justify-content: center;
+  height: 250px;
+}
+
+#box2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 250px;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  height: 250px;
+}
+
+#weaponContainer {
+  display: flex;
+  justify-content: center;
+  height: 250px;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+#box3 {
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 48px;
+  font-weight: bold;
+  color: #00ff00;
+  font-family: "consolas", sans-serif;
+
+}
+
+#box4 {
+  color: #00ff00;
+  display: flex;
+  justify-content: center;
+  height: 250px;
+
+}
+
+#box5 {
+  display: flex;
+  justify-content: center;
+
+}
+
+/*
+ font-size: 48px;
+  font-weight: bold;
+  color: #00ff00;
+  background-color: #333333;
+  border-radius: 1000px;
+  font-family: "consolas", sans-serif;

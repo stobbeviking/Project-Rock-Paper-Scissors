@@ -2,14 +2,60 @@
 <html lang="en">
 
 <head>
+  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>THE GAME</title>
 </head>
 
 <body>
-  <button onclick="location.reload()">Refresh Page</button>
-  <script src="JAV.js"></script>
+  <div id="box1">
+    <div id="gameName">
+      <h1>The Throwdown</h1>
+    </div>
+  </div>
+
+  <div id="box2">
+    <div id="title">
+      <h1>CHOOSE YOUR WEAPON!!! </h1>
+    </div>
+
+    <div id="weaponContainer">
+      <button id="rockButton" onclick="play('rock')">🪨ROCK🤜
+      </button>
+      <button id="paperButton" onclick="play('paper')">📄PAPER🤚
+      </button>
+      <button id="scissorsButton" onclick="play('scissors')">✂️SCISSORS✌️
+      </button>
+    </div>
+  </div>
+
+  <div id="box3">
+    <div id="container">
+      <div class="display">
+        <p>WHAT WAS PLAYED:</p>
+        <p>YOU CHOSE: <span id="humanChose"></span> </p>
+        <P>COMPUTER CHOSE:<span id="computerChose"></span> </P>
+        <p id="winMessage">
+      </div>
+
+      <div id="scoreBoard">
+        <p>Player score: <span id="playerScore">0</span></p>
+        <p>Computer Score: <span id="computerScore">0</span></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="box4">
+    <h1 id="roundWinner"></h1>
+  </div>
+
+  <div id="box5">
+    <div id="restart">
+      <button onclick="location.reload()">RESTART</button>
+    </div>
+  </div>
+  <script src="JAV.js" defer></script>
 </body>
 
 </html>
